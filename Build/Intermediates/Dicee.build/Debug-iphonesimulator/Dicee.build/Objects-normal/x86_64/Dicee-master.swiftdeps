@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "15eeb22de55482077b474053fc770909"
+build_time: [1515890250, 320275000]
+inputs:
+  "/Users/amithdubbasi/Desktop/iOS Stuff/iOS Projects Amith/Dice App/auto-layout-with-dicee-master/Dicee/ViewController.swift": [1515889962, 0]
+  "/Users/amithdubbasi/Desktop/iOS Stuff/iOS Projects Amith/Dice App/auto-layout-with-dicee-master/Dicee/AppDelegate.swift": [1480942998, 0]
