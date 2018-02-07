@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B7F3239EBC1A4396CDAE91A /* Pods_Dicee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C55978D06659E264F6D97B /* Pods_Dicee.framework */; };
 		6336471B1B8C734900FF45E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6336471A1B8C734900FF45E2 /* AppDelegate.swift */; };
 		6336471D1B8C734900FF45E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6336471C1B8C734900FF45E2 /* ViewController.swift */; };
 		633647201B8C734900FF45E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6336471E1B8C734900FF45E2 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A077B48199471FA2C5E7A6F /* Pods-Dicee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicee.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dicee/Pods-Dicee.release.xcconfig"; sourceTree = "<group>"; };
 		633647151B8C734900FF45E2 /* Dicee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dicee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633647191B8C734900FF45E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6336471A1B8C734900FF45E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		6336471F1B8C734900FF45E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		633647211B8C734900FF45E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		633647241B8C734900FF45E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B5C55978D06659E264F6D97B /* Pods_Dicee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dicee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F123305A19170609466CA835 /* Pods-Dicee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dicee/Pods-Dicee.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B7F3239EBC1A4396CDAE91A /* Pods_Dicee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				633647171B8C734900FF45E2 /* Dicee */,
 				633647161B8C734900FF45E2 /* Products */,
+				F76297FECCA28923C34FC00B /* Pods */,
+				A9D65FC9B8091B92BD4106A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +79,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A9D65FC9B8091B92BD4106A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5C55978D06659E264F6D97B /* Pods_Dicee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F76297FECCA28923C34FC00B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F123305A19170609466CA835 /* Pods-Dicee.debug.xcconfig */,
+				4A077B48199471FA2C5E7A6F /* Pods-Dicee.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 633647341B8C734900FF45E2 /* Build configuration list for PBXNativeTarget "Dicee" */;
 			buildPhases = (
+				6C0065884A719DA28F9111F9 /* [CP] Check Pods Manifest.lock */,
 				633647111B8C734900FF45E2 /* Sources */,
 				633647121B8C734900FF45E2 /* Frameworks */,
 				633647131B8C734900FF45E2 /* Resources */,
+				35B12B531C1FF11B53C7C1D0 /* [CP] Embed Pods Frameworks */,
+				9E5F34F932DA9BBCB4F73E1B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35B12B531C1FF11B53C7C1D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dicee/Pods-Dicee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dicee/Pods-Dicee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C0065884A719DA28F9111F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dicee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E5F34F932DA9BBCB4F73E1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dicee/Pods-Dicee-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		633647111B8C734900FF45E2 /* Sources */ = {
@@ -273,6 +354,7 @@
 		};
 		633647351B8C734900FF45E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F123305A19170609466CA835 /* Pods-Dicee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M67H5Z9NQV;
@@ -289,6 +371,7 @@
 		};
 		633647361B8C734900FF45E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A077B48199471FA2C5E7A6F /* Pods-Dicee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M67H5Z9NQV;
